@@ -3,12 +3,12 @@ Git Projects is a front-end web application designed to manage project data with
 
 ->Features:
 1 )Responsive Design: Fully optimized for desktops, tablets, and mobile devices. <br>
-2) Add Projects: Users can create new project entries with ease.
-3) Edit Projects: Modify existing project details through an intuitive interface.
-4) Delete Projects: Remove unwanted project entries with a single click.
-5) Dynamic Animations: Smooth transitions between different UI states.
-6) User Authentication UI: Includes a stylish login and registration form.
-7) Social Media Integration UI: Placeholder icons for login via platforms like Facebook, Twitter, Google, and GitHub.
+2) Add Projects: Users can create new project entries with ease.<br>
+3) Edit Projects: Modify existing project details through an intuitive interface.<br>
+4) Delete Projects: Remove unwanted project entries with a single click.<br>
+5) Dynamic Animations: Smooth transitions between different UI states.<br>
+6) User Authentication UI: Includes a stylish login and registration form.<br>
+7) Social Media Integration UI: Placeholder icons for login via platforms like Facebook, Twitter, Google, and GitHub.<br>
 
 ->Technologies Used
 1) HTML5
@@ -19,3 +19,8 @@ Git Projects is a front-end web application designed to manage project data with
 Backend integration for persistent storage of project data.
 Authentication and authorization features.
 Real-time collaboration tools.
+
+->PROJECT MEMBERS: 
+1) Aqsa Tariq
+2) Laiba Aftab
+3) Laiba Tariq
