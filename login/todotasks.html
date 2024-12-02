@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="todotasks.css">
+</head>
+<body>
+    <div id="form">
+        <a href="projectmgmt.html"><button type="submit" id="savebtn">Back</button></a>
+        <h1 align="center" id="addtask">Add Task</h1>
+        <table>
+            <form action="">
+                <tr>
+                    <td>Enter Title for Task:</td>
+                    <td><input type="text" placeholder="Add title" id="title"></td>
+                </tr>
+                <tr>
+                    <td>Task Assigned To:</td>
+                    <td><input type="text" placeholder="Name of contributor" id="assign"></td>
+                </tr>
+                <tr>
+                    <td>Task Description:</td>
+                    <td><textarea id="textarea" placeholder="Add description" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="savebtncenter" onclick="savebtn(event)">
+                        <button type="button" id="savebtn">Save</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

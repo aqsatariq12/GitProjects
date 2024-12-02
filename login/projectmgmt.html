@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="projectmgmt.css">
+    <link rel="stylesheet" href="DashBoard.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>PROJECT MANAGEMENT</h1>
+        <div>
+            <a href="todotasks.html" target="_blank"><button id="addtaskbtn">Add Task</button></a>
+        </div>
+    </header>
+
+    <div id="cards">
+        <div id="todocard">
+            <h2>TO-DO</h2>
+            <div id="todotasks">
+                <ul id="todoul"></ul>
+            </div>
+        </div>
+
+        <div id="inprogresscard">
+            <h2>IN-PROGRESS</h2>
+            <div id="inprogresstasks">
+                <ul>
+                    <li class="progress">Title:Navbar</li>
+                    <li class="progress">Assigned to: Laiba</li>
+                    <li class="progress">Description:Must be Responsive</li>
+                </ul>
+                <br>
+                <ul>
+                    <li class="progress">Title:Cards</li>
+                    <li class="progress">Assigned to: Aqsa</li>
+                    <li class="progress">Description:Must in Rows</li>
+                </ul>
+                <br>
+                <ul>
+                    <li class="progress">Title:Cards</li>
+                    <li class="progress">Assigned to: Aqsa</li>
+                    <li class="progress">Description:Must in Rows</li>
+                </ul>
+            </div>
+        </div>
+        <div id="completedcard">
+            <h2>COMPLETED</h2>
+            <div id="completedtasks">
+                <ul>
+                    <li class="progress">Title:Cards</li>
+                    <li class="progress">Assigned to: Aqsa</li>
+                    <li class="progress">Description:Must in Rows</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="edit-popup" class="popup">
+        <form id="edit-form">
+            <label for="edit-title">Edit Title:</label>
+            <input type="text" id="edit-title" required>
+            <label for="edit-assign">Edit Assigned To:</label>
+            <input type="text" id="edit-assign" required>
+            <label for="edit-description">Edit Description:</label>
+            <textarea id="edit-description" rows="4" required></textarea>
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancel-edit">Cancel</button>
+        </form>
+    </div>
+    <div id="btn-danger">
+    <a href="index.html"><button type="button" class="btn btn-danger">Log out</button></a></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) !important;
+    font-weight: bolder;
+    font-size: 40px;
+}
+header{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center !important;
+    background: linear-gradient(to left, #7ed0f0, #196191);
+    height: 60px;
+}
+.progress{
+    margin-bottom: -25px !important;
+}
+#btn-danger{
+margin-top: 70px;
+display: flex;
+justify-content: center;
+}
+.btn.btn-danger{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#addtaskbtn{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(22, 138, 22);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#addtaskbtn:hover{
+    transition: 0.7ms;
+    transform: scale(1.1);
+    background-color: rgb(25, 92, 25);
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: white !important;
+    font-weight: bolder !important;
+    margin-bottom: 35px;
+    color: rgb(46, 23, 128) !important;
+}
+#todocard, #inprogresscard,#completedcard{
+    width: 200px;
+    height: 400px;
+    background: linear-gradient(to left, #7ef0ad, #4482ac);
+    border: none;
+    border-radius: 30px !important;
+    box-shadow: 10px 10px 15px rgb(34, 26, 26) !important;
+    margin: 0px -50px;
+    width: 25%;
+    padding: 20px;
+    color: rgb(255, 255, 255) !important;
+    list-style-type: none;
+    font-size: 20px;
+    padding-top: 25px;
+    text-align: center;
+}
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+ul>li {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup.active {
+    display: block;
+}
+
+/* Input Field Styling */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+button.edit-btn {
+    background-color: #003b94;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button.edit-btn:hover {
+    background-color: #042f6e;
+    transform: scale(1.05);
+}
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Delete Button Styling */
+button.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.delete-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+button.delete-btn:active {
+    background-color: #cc0000;
+}
+
+@media screen and (max-width:1500px){
+    #cards {
+        display: flex !important;
+        flex-direction: column;
+    }
+    #todocard, #inprogresscard,#completedcard{
+        align-self: center;
+        width: 500px;
+       margin-bottom: 40px;
+        border: 2px solid green;
+    }
+
+}
+@media screen and (max-width:575px){
+    #todocard, #inprogresscard,#completedcard{
+        width: 300px;
+    }
+    h1{
+        font-size: 20px !important;
+    }
+    #addtaskbtn{
+        width: 80px;
+    }
+
+}
+@media screen and (max-width:395px){
+    h1{
+        font-size: 18px !important;
+    }
+    #addtaskbtn{
+        margin-right: 20px;
+    }
+
+}
+@media screen and (max-width:350px){
+    h1{
+        font-size: 15px !important;
+    }
+    #addtaskbtn{
+        width: 70px;
+        font-size: 12px !important;
+    }
+
+}
